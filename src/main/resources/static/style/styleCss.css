@@ -1,17 +1,16 @@
 .detalhesEvento{
 	box-shadow: 0px 0px 5px grey;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 60px;
 }
 
 .detalhesConvidado{
 	box-shadow: 0px 0px 5px grey;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-left: 20px;
-	padding-right: 20px;
 	padding-bottom: 10px;
+	margin-bottom: 60px;
 }
 
 .tabelaConvidados{
@@ -20,8 +19,17 @@
 
 .formEvento{
 	box-shadow: 0px 0px 5px grey;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-left: 20px;
-	padding-right: 20px;
 	padding-bottom: 10px;
+	margin-bottom: 60px;
+	
 }
+
+.menu{
+	background-color: #96ba5a;
+}
+
+.button{
+	class="red";
+  }
