@@ -1,4 +1,4 @@
-package com.rodrigoparente.data;
+package com.eventoapp;
 
 import java.net.URI;
 import java.net.URISyntaxException;

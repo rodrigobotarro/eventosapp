@@ -1,4 +1,4 @@
-package com.rodrigoparente.data;
+package com.eventoapp;
 
 import javax.sql.DataSource;
 

@@ -1,11 +1,11 @@
-.detalhesEvento{
+.detalhesEvento {
 	box-shadow: 0px 0px 5px grey;
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-bottom: 60px;
 }
 
-.detalhesConvidado{
+.detalhesConvidado {
 	box-shadow: 0px 0px 5px grey;
 	padding-top: 20px;
 	padding-left: 20px;
@@ -13,23 +13,33 @@
 	margin-bottom: 60px;
 }
 
-.tabelaConvidados{
+.tabelaConvidados {
 	width: 50%;
 }
 
-.formEvento{
+.formEvento {
 	box-shadow: 0px 0px 5px grey;
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-bottom: 10px;
 	margin-bottom: 60px;
-	
 }
 
-.menu{
-	background-color: #96ba5a;
+.menu {
+	background-color: #A8DBA8;
 }
 
-.button{
-	class="red";
-  }
+.brand-logo {
+	text-decoration: none;
+	color: RGB(255, 255, 255, 1) !important;
+	text
+}
+
+.btn {
+	background-color: #3B8686;
+	color: RGB(255, 255, 255, .7);
+}
+
+.trash {
+	color: #3B8686;
+}
