@@ -44,13 +44,15 @@ public class EventoController {
 		return "redirect:/eventos";
 	}
 	
+	/*
+	 * Retorna todos eventos cadastrados 
+	 */	
 	@RequestMapping("/eventos")
 	public ModelAndView listaEventos() {
 		ModelAndView mv = new ModelAndView("index");
 		Iterable<Evento> eventos = er.findAll();
 		mv.addObject("eventos", eventos);
 		return mv;
-		
 	}
 	
 	/*
