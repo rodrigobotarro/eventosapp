@@ -25,11 +25,17 @@ public class EventoController {
 	@Autowired
 	private ConvidadoRepository cr;
 
+	/*
+	 * Redireciona para tela do formulário de cadatro
+	 */
 	@RequestMapping(value = "/cadastrarEvento", method = RequestMethod.GET)
 	public String from() {
 		return "evento/formEvento";
 	}
-
+	
+	/*
+	 * Valida campos do Evento e persiste na base de dados
+	 */
 	@RequestMapping(value = "/cadastrarEvento", method = RequestMethod.POST)
 	public String from(@Valid Evento evento, BindingResult result, RedirectAttributes attributes) {
 
@@ -86,13 +92,18 @@ public class EventoController {
 		return "redirect:/{codigo}";
 	}	
 	
-	@RequestMapping(value="/deletarEvento")
+	/*
+	 * Removendo Evento da Lista
+	 */
+	@RequestMapping(value="/deletarEvento/{codigo}")
 	public String deletarEvento(long codigo) {
 		Evento evento = er.findByCodigo(codigo);
 		er.delete(evento);
 		return "redirect:/eventos";
 	}
-	
+	/*
+	 * Removendo convidado do Evento
+	 */
 	@RequestMapping(value="/deletarConvidado")
 	public String deletarConvidado(String rg) {
 		Convidado convidado = cr.findByRg(rg);

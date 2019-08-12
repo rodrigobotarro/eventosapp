@@ -15,7 +15,7 @@ public class Convidado {
 	@NotEmpty
 	private String nomeConvidado;
 	
-	@ManyToOne
+	@ManyToOne()
 	private Evento evento;
 	
 	public String getRg() {
